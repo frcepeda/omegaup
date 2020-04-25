@@ -22,6 +22,7 @@ rewrite ^/arena/([a-zA-Z0-9_+-]+)/virtual/?$ /arena/virtual.php?contest_alias=$1
 rewrite ^/arena/([a-zA-Z0-9_+-]+)/print/?$ /arena/contestprint.php?alias=$1 last;
 rewrite ^/arena/[a-zA-Z0-9_+-]+/admin/?$ /arena/admin.php last;
 rewrite ^/arena/[a-zA-Z0-9_+-]+/scoreboard/[a-zA-Z0-9_+-]+/?$ /arena/scoreboard.php last;
+rewrite ^/arena/[a-zA-Z0-9_+-]+/submissionsvisualizer/[a-zA-Z0-9_+-]+/?$ /arena/submissionsvisualizer.php last;
 rewrite ^/arena/([a-zA-Z0-9_+-]+)/?$ /arena/contest.php?contest_alias=$1 last;
 rewrite ^/arena/([a-zA-Z0-9_+-]+)/practice/?$ /arena/contest.php?contest_alias=$1&is_practice=true last;
 rewrite ^/badge/list/?$ /badgelist.php last;
